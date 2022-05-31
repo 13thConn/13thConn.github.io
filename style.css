@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.btn-warning{
+  background-color:#fd7e14;
+  border: 1 px solid #fd7e14;
+}
+.btn-primary{
+  background-color: #563d7c;
+  border: 1 px solid #563d7c;
+}
+.btn-secondary{
+  background-color: #6c757d;
+  border: 1 px solid #6c757d;
+}
+.btn-info{
+  background-color: #d63384;
+  border: 1 px solid #d63384;
+}
+
+footer{
+  background-color:#343a40;
+  color:#d5d5d5;
+  padding-top:2rem;
+}
+.light{
+  border-top: 1px splid #d5d5d5;
+}
+.carousel {
+
+  width:100%;
+  height:100%
+}
+.btn-success{
+  background-color: #20c997;
+  border: 1 px solid #20c997;
+}
+.btn-light{
+  background-color: #6f42c1;
+  border: 1 px solid #6f42c1;
+}
+.btn-danger{
+  background-color: #dc3545;
+  border: 1 px solid #dc3545;
+}
+.btn-dark{
+  background-color: #0dcaf0;
+  border: 1 px solid #0dcaf0;
+}
