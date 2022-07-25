@@ -1,8 +1,0 @@
-/* zoom effect */
-.zoom {
-    transition: transform .2s;
-  }
-
-  .zoom:hover {
-    transform: scale(1.1);
-  }
