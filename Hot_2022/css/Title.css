@@ -1,0 +1,180 @@
+/* 融球效果原地址：https://codepen.io/JanneLeppanen/pen/GyXydp */
+.metaballs {
+  color: white;
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: contrast(1);
+}
+@font-face {
+    font-family: mpo;
+    src: url('F5AJCHIG-2.ttf');
+}
+
+
+
+@mixin metaball($size, $duration, $top ) {
+    width: $size;
+    height: $size;
+    animation: move $duration infinite ease-in-out;
+    top: $top;
+}
+
+.metaball {
+  position: absolute;
+  background: black;
+  border-radius: 100%;
+  filter: blur(15px);
+
+  &--big {
+    width: 50vw;
+    height: 50vw;
+    top: -5vw;
+    left: -5vw;
+  }
+
+  &--small {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &-2 { @include metaball(7rem, 8s, 1rem); }
+  &-3 { @include metaball(5rem, 7s, 4rem); }
+  &-4 { @include metaball(6rem, 16s, 7rem); }
+  &-5 { @include metaball(4rem, 11s, 10rem); }
+  &-6 { @include metaball(8rem, 6s, 16rem); }
+  &-7 { @include metaball(4rem, 11s, 10rem); }
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+
+
+.metaball {
+  color:white;
+  position: absolute;
+  background-color:#ffffff;
+  border-radius: 100%;
+  filter: blur(15px);
+}
+
+.metaball--big {
+  width: 30vw;
+  height: 30vw;
+  top: -7vw;
+  left: -7vw;
+      background-color:#f9ca72;
+}
+
+.metaball--small {
+  width: 6rem;
+  height: 6rem;
+}
+
+.metaball-2 {
+  width: 7rem;
+  height: 7rem;
+    background-color:#db4337;
+  animation: move 8s infinite ease-in-out;
+  top: 1rem;
+}
+
+.metaball-3 {
+  width: 5rem;
+  height: 5rem;
+      background-color:#ed5928;
+  animation: move 7s infinite ease-in-out;
+  top: 4rem;
+}
+
+.metaball-4 {
+  width: 5rem;
+  height: 5rem;
+      background-color:#f67036;
+  animation: move 16s infinite ease-in-out;
+  top: 7rem;
+}
+
+.metaball-5 {
+  width: 4rem;
+  height: 4rem;
+      background-color:#f48e45;
+  animation: move 11s infinite ease-in-out;
+  top: 10rem;
+}
+
+.metaball-6 {
+  width: 10rem;
+  height: 10rem;
+      background-color:#f7b056;
+  animation: move 7s infinite ease-in-out;
+  top: 22rem;
+}
+.metaball-7 {
+  width: 7rem;
+  height: 7rem;
+      background-color:#ffffff;
+  animation: move 6s infinite ease-in-out;
+  top: 23rem;
+}
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+.main_page_title {
+  color:white;
+  font-family: Raleway,Source Sans Pro;
+  font-weight: 700;
+  font-size: 4em;
+  padding-left: 6%;
+  padding-right: 6%
+}
+.main_page {
+  color:#ffffff;
+  z-index: 500;
+/* 如果需要一个元素不参与底层元素的按此排序，那么就把他的z-index提高一点，这样就会开启一个新的排序 */
+  position: relative;
+  text-align: center;
+  top: 18vh;
+font-size:80px;
+    font-family: mpo;
+}
+.main_page_div {
+  z-index: 120;
+/* 如果需要一个元素不参与底层元素的按此排序，那么就把他的z-index提高一点，这样就会开启一个新的排序 */
+  position: relative;
+  text-align: center;
+  top: 25vh;
+font-size:30px;
+}
+
+#main_page_proverbs{
+  font-family: Raleway,Source Sans Pro;
+  font-weight: 350;
+}
+.btn_font {
+  font-family: Raleway,Source Sans Pro;
+  font-weight: 900;
+}
